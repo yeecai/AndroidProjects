@@ -1,0 +1,4 @@
+#Sun Jul 07 06:53:39 CEST 2019
+base.0=/home/lilian/android-advanced-starter-apps-master/FragmentExample1/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex
