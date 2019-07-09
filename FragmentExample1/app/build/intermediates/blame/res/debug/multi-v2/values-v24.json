@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lilian/android-advanced-starter-apps-master/FragmentExample1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/lilian/AndroidStudioProjects/FragmentExample1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/res/values-v24/values-v24.xml",
