@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mButton;
     private boolean isFragmentDisplayed = false;
 
+    static final String STATE_FRAGMWNT = "state_of_fragment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        if (savedInstanceState != null) {
+            isFragmentDisplayed = savedInstanceState.getBoolean(STATE_FRAGMWNT);
+            if (isFragmentDisplayed) {
+                mButton.setText(R.string.close);
+            }
+        }
+    }
+
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the state of fragment
+        savedInstanceState.putBoolean(STATE_FRAGMWNT,isFragmentDisplayed);
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     public void displayFragment() {
