@@ -16,6 +16,7 @@
 
 package com.example.android.fragmentexample;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button mButton;
+    private Button nButton;
+
     private boolean isFragmentDisplayed = false;
 
     static final String STATE_FRAGMWNT = "state_of_fragment";
@@ -45,6 +48,19 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        nButton = (Button) findViewById(R.id.next_button);
+
+        nButton.setOnClickListener(new View.OnClickListener()  {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
         if (savedInstanceState != null) {
             isFragmentDisplayed = savedInstanceState.getBoolean(STATE_FRAGMWNT);
             if (isFragmentDisplayed) {

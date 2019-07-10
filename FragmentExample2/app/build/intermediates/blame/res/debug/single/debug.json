@@ -912,6 +912,10 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/lilian/AndroidStudioProjects/FragmentExample2/app/build/intermediates/res/merged/debug/layout_activity_second.xml.flat",
+        "source": "/home/lilian/AndroidStudioProjects/FragmentExample2/app/src/main/res/layout/activity_second.xml"
+    },
+    {
         "merged": "/home/lilian/AndroidStudioProjects/FragmentExample2/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
