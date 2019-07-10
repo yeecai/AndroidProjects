@@ -1,4 +1,0 @@
-#Wed Jul 10 07:05:24 CEST 2019
-base.0=/home/lilian/AndroidStudioProjects/FragmentExample2/app/build/intermediates/dex/debug/mergeDexDebug/out
-path.0=classes.dex
-renamed.0=classes.dex
