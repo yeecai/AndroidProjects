@@ -75,7 +75,7 @@
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:name="com.example.android.fragmentexample.SimpleFragment"
+        android:name="com.example.android.fragmentcommunicate.SimpleFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"

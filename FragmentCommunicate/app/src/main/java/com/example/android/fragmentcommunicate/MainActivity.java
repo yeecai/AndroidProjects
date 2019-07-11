@@ -16,6 +16,7 @@
 
 package com.example.android.fragmentcommunicate;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -68,6 +69,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+   /* private static MainActivity instance = null;
+    static public MainActivity getInstance(Activity activity) {
+        if( instance == null) {
+            instance = new MainActivity(activity); // can't really do this MainActivity in class MainA..
+            return instance;
+        } else {
+            return instance;
+        }
+    }*/
 
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // Save the state of fragment

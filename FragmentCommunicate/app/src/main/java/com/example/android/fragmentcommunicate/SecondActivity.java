@@ -1,5 +1,6 @@
 package com.example.android.fragmentcommunicate;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -11,6 +12,8 @@ import android.widget.Button;
 public class SecondActivity extends AppCompatActivity {
     private Button mButton;
     private boolean isFragmentDisplayed = false;
+    private SecondActivity instance = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,52 +22,26 @@ public class SecondActivity extends AppCompatActivity {
 
         Button nButton = (Button) findViewById(R.id.next_button);
 
-        nButton.setOnClickListener(new View.OnClickListener()  {
+        nButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent;
                 intent = new Intent(SecondActivity.this, MainActivity.class);
-                    startActivity(intent);
+                startActivity(intent);
 
             }
         });
+
+        final MainActivity mainactivity = new MainActivity();
 
         mButton = findViewById(R.id.open_button);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!isFragmentDisplayed) {
-                    displayFragment();
-                }else {
-                    closeFragment();
-                }
+                if (!isFragmentDisplayed) {
+                    mainactivity.displayFragment();
+                } else mainactivity.closeFragment();
             }
         });
-    }
-    public void displayFragment() {
-        SimpleFragment simpleFragment = SimpleFragment.newInstance();
-        //Get the FragmentManager and start a transaction
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        //TODO: Add the SimpleFragment.
-        fragmentTransaction.add(R.id.fragment_container,
-                simpleFragment).addToBackStack(null).commit();
-        mButton.setText(R.string.close);
-        isFragmentDisplayed = true;
-    }
-
-    public void closeFragment() {
-
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        SimpleFragment simpleFragment =  (SimpleFragment) fragmentManager.findFragmentById(R.id.fragment_container);
-        // TODO: if the simplefragment exists, need to remove the callback. which means the displayFragment() called
-        if( simpleFragment != null) {
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.remove(simpleFragment).commit();
-        }
-
-        mButton.setText(R.string.open);
-        isFragmentDisplayed = false;
     }
 }
