@@ -24,14 +24,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+    implements SimpleFragment.OnFragmentInterationListener{
     private Button mButton;
     private Button nButton;
 
     private boolean isFragmentDisplayed = false;
 
     static final String STATE_FRAGMWNT = "state_of_fragment";
+    private int mRadioButtonChoice = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,16 +73,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-   /* private static MainActivity instance = null;
-    static public MainActivity getInstance(Activity activity) {
-        if( instance == null) {
-            instance = new MainActivity(activity); // can't really do this MainActivity in class MainA..
-            return instance;
-        } else {
-            return instance;
-        }
-    }*/
-
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // Save the state of fragment
         savedInstanceState.putBoolean(STATE_FRAGMWNT,isFragmentDisplayed);
@@ -111,5 +104,12 @@ public class MainActivity extends AppCompatActivity {
 
         mButton.setText(R.string.open);
         isFragmentDisplayed = false;
+    }
+
+
+    @Override
+    public void onRadioButtonChoice(int choice) {
+        mRadioButtonChoice = choice;
+        Toast.makeText(this,"Choice is " + Integer.toString(choice),Toast.LENGTH_SHORT).show();
     }
 }

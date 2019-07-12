@@ -23,18 +23,16 @@ public class SimpleFragment extends Fragment {
     private static final int NONE = 2;
     public int mRadioButtonChoice = NONE;
 
-  /*  OnFragmentInterationListener mListener;
+    OnFragmentInterationListener mListener;
 
     interface OnFragmentInterationListener {
         void onRadioButtonChoice(int choice);
     }
-*/
     public static SimpleFragment newInstance() {
         // Required empty public constructor
         return new SimpleFragment();
     }
 
-/*
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -45,7 +43,6 @@ public class SimpleFragment extends Fragment {
                     + getResources().getString(R.string.exception_message));
         }
     }
-*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,13 +63,13 @@ public class SimpleFragment extends Fragment {
                                                               switch (index) {
                                                                   case YES: // User chose "Yes."
                                                                       textView.setText(R.string.yes_message);
-                                                                   //   mRadioButtonChoice = YES;
-                                                                    //  mListener.onRadioButtonChoice(YES);
+                                                                      mRadioButtonChoice = YES;
+                                                                      mListener.onRadioButtonChoice(YES);
                                                                       break;
                                                                   case NO: // User chose "No."
                                                                       textView.setText(R.string.no_message);
-                                                                      //mRadioButtonChoice = NO;
-                                                                      //mListener.onRadioButtonChoice(NO);
+                                                                      mRadioButtonChoice = NO;
+                                                                      mListener.onRadioButtonChoice(NO);
                                                                       break;
                                                                   default: // No choice made.
                                                                       // Do nothing.
