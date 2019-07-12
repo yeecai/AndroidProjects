@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void displayFragment() {
-        SimpleFragment simpleFragment = SimpleFragment.newInstance();
+        SimpleFragment simpleFragment = SimpleFragment.newInstance(mRadioButtonChoice); // Do we have to new an instance each single time?
         //Get the FragmentManager and start a transaction
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
