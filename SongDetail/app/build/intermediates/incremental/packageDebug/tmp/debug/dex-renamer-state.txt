@@ -1,0 +1,4 @@
+#Sun Jul 14 02:36:29 CEST 2019
+base.0=/home/lilian/AndroidStudioProjects/SongDetail/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex
