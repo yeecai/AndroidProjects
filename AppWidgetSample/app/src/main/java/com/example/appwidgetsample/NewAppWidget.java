@@ -1,8 +1,10 @@
 package com.example.appwidgetsample;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.widget.RemoteViews;
 
@@ -25,6 +27,16 @@ public class NewAppWidget<count> extends AppWidgetProvider {
                                 int appWidgetId) {
 
         SharedPreferences prefs = context.getSharedPreferences(mSharedPreFile, 0);
+
+        Intent intentUpdate = new Intent(context, NewAppWidget.class);
+        intentUpdate.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+
+        int[] idArray = new int[]{appWidgetId};
+        intentUpdate.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, idArray);
+        PendingIntent pendingUpdate = PendingIntent.getBroadcast(
+                context, appWidgetId, intentUpdate, PendingIntent.FLAG_UPDATE_CURRENT);
+
+
         int count = prefs.getInt(COUNT_KEY + appWidgetId, 0);
         count++;
 
@@ -34,6 +46,7 @@ public class NewAppWidget<count> extends AppWidgetProvider {
 
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
+        views.setOnClickPendingIntent(R.id.button_update, pendingUpdate);
 
         SharedPreferences.Editor preEditor = prefs.edit();
         preEditor.putInt(COUNT_KEY + appWidgetId, count);
