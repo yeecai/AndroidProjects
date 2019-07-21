@@ -1,6 +1,7 @@
 package com.example.sensorsurvey;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
       mTextSensorProximity = (TextView) findViewById(R.id.label_proximity);
       mTextSensorHumidity = (TextView) findViewById(R.id.label_humidity);
       mImageView = (ImageView) findViewById(R.id.imageView);
+        mImageView.setBackgroundColor(Color.rgb(255, 255, 255));
 
       mSensorProximity = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
       mSensorLight = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
@@ -101,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             case Sensor.TYPE_LIGHT:
                 mTextSensorLight.setText(getResources().getString(
                         R.string.label_light, currentValue));
-                mImageView.setBackgroundColor((int)currentValue);
+
                 break;
             case Sensor.TYPE_PROXIMITY:
                 mTextSensorProximity.setText(getResources().getString(
