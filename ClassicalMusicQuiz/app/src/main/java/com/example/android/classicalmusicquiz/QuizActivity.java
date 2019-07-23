@@ -18,6 +18,8 @@ package com.example.android.classicalmusicquiz;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -72,11 +74,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     private Button[] mButtons;
     private SimpleExoPlayer mExoPlayer;
     private SimpleExoPlayerView mPlayerView;
-    private MediaSessionCompat mMediaSession;
+    private static MediaSessionCompat mMediaSession;
     private PlaybackStateCompat.Builder mStateBuilder;
-    private Object mNotficationManager;
     private NotificationManager mNotificationManager;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +132,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initializePlayer(Uri mediaUri) {
         if (mExoPlayer == null) {
+            // create instance of EXO
             TrackSelector trackSelector = new DefaultTrackSelector();
             LoadControl loadControl = new DefaultLoadControl();
             mExoPlayer = ExoPlayerFactory.newSimpleInstance(this, trackSelector, loadControl);
@@ -141,7 +142,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             mExoPlayer.addListener(this);
 
             String userAgent = Util.getUserAgent(this,"Classical Music Quiz");
-           // MediaSource mediaSource = new ExtractorMediaSource(mediaUri, new DefaultDataSourceFactory(this,userAgent), new DefaultExtractorsFactory(), null,null)
             MediaSource mediaSource = new ExtractorMediaSource(mediaUri, new DefaultDataSourceFactory(
                     this, userAgent), new DefaultExtractorsFactory(), null, null);
             mExoPlayer.prepare(mediaSource);
@@ -295,9 +295,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(TAG, "onPlayerStateChanged: PAUSED");
             }
 
-           // mMediaSession.setPlaybackState(mStateBuilder.build()); // Why here again???
+            mMediaSession.setPlaybackState(mStateBuilder.build()); // Why here again???
         // call the notification method
-        showNotification(mStateBuilder.build());
+         showNotification(mStateBuilder.build());
 
 
     }
@@ -326,8 +326,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         // Set initial PlayBackState with Action_play
         mStateBuilder = new PlaybackStateCompat.Builder().setActions(
+
                         PlaybackStateCompat.ACTION_PLAY|
-                        PlaybackStateCompat.ACTION_PAUSE|
+                                PlaybackStateCompat.ACTION_PAUSE |
                         PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS|
                         PlaybackStateCompat.ACTION_PLAY_PAUSE);
 
@@ -359,7 +360,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     // Show noticaftion with pause/skiptoprevious method,
-  /*  private void showNotification(PlaybackStateCompat state) {
+
+   private void showNotification(PlaybackStateCompat state) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 
         int icon;
@@ -389,7 +391,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         builder.setContentTitle(getString(R.string.guess))
                 .setContentText(getString(R.string.notification_text))
                 .setContentIntent(contentPendingIntent)
-                //.setSmallIcon(R.drawable.ic_music_note)
+                .setSmallIcon(R.drawable.ic_music_note)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .addAction(restartAction)
                 .addAction(playPauseAction)
@@ -398,11 +400,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                         .setShowActionsInCompactView(0,1));
 
 
-        mNotficationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        ((NotificationManager) mNotficationManager).notify(0, builder.build());
+        mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        ((NotificationManager) mNotificationManager).notify(0, builder.build());
 
     }
-*/private void showNotification(PlaybackStateCompat state) {
+
+   /* private void showNotification(PlaybackStateCompat state) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 
         int icon;
@@ -444,5 +447,21 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         mNotificationManager.notify(0, builder.build());
     }
+*/
+    /*
+     *  Static inner class for receive notification
+     * */
+    public static class MediaReceiver extends BroadcastReceiver {
+
+        public MediaReceiver() {
+
+        }
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            MediaButtonReceiver.handleIntent(mMediaSession, intent);
+        }
+    }
+
 
 }

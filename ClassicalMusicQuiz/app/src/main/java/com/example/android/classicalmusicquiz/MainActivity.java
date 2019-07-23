@@ -14,10 +14,19 @@
 * limitations under the License.
 */
 
+/*
+*
+*
+*  TODO: Notification to pause music, a receiver, intent, tar and Filter.
+* */
 package com.example.android.classicalmusicquiz;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.media.session.MediaButtonReceiver;
+import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -66,4 +75,8 @@ public class MainActivity extends AppCompatActivity {
         Intent quizIntent = new Intent(this, QuizActivity.class);
         startActivity(quizIntent);
     }
+
+
+
+
 }
