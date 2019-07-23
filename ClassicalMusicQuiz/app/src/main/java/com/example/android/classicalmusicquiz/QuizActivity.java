@@ -295,7 +295,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(TAG, "onPlayerStateChanged: PAUSED");
             }
 
-            mMediaSession.setPlaybackState(mStateBuilder.build()); // Why here again???
+            mMediaSession.setPlaybackState(mStateBuilder.build()); // Why here again??? without it can't pause through pop-up
         // call the notification method
          showNotification(mStateBuilder.build());
 
