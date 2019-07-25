@@ -359,7 +359,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    // Show noticaftion with pause/skiptoprevious method,
+    // Show notification with pause/skiptoprevious method,
 
    private void showNotification(PlaybackStateCompat state) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
@@ -405,49 +405,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-   /* private void showNotification(PlaybackStateCompat state) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 
-        int icon;
-        String play_pause;
-        if(state.getState() == PlaybackStateCompat.STATE_PLAYING){
-            icon = R.drawable.exo_controls_pause;
-            play_pause = getString(R.string.pause);
-        } else {
-            icon = R.drawable.exo_controls_play;
-            play_pause = getString(R.string.play);
-        }
-
-
-        NotificationCompat.Action playPauseAction = new NotificationCompat.Action(
-                icon, play_pause,
-                MediaButtonReceiver.buildMediaButtonPendingIntent(this,
-                        PlaybackStateCompat.ACTION_PLAY_PAUSE));
-
-        NotificationCompat.Action restartAction = new android.support.v4.app.NotificationCompat
-                .Action(R.drawable.exo_controls_previous, getString(R.string.restart),
-                MediaButtonReceiver.buildMediaButtonPendingIntent
-                        (this, PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS));
-
-        PendingIntent contentPendingIntent = PendingIntent.getActivity
-                (this, 0, new Intent(this, QuizActivity.class), 0);
-
-        builder.setContentTitle(getString(R.string.guess))
-                .setContentText(getString(R.string.notification_text))
-                .setContentIntent(contentPendingIntent)
-                .setSmallIcon(R.drawable.ic_music_note)
-                .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
-                .addAction(restartAction)
-                .addAction(playPauseAction)
-                .setStyle(new NotificationCompat.MediaStyle()
-                        .setMediaSession(mMediaSession.getSessionToken())
-                        .setShowActionsInCompactView(0,1));
-
-
-        mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        mNotificationManager.notify(0, builder.build());
-    }
-*/
     /*
      *  Static inner class for receive notification
      * */

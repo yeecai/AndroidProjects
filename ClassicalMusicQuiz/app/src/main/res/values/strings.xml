@@ -22,7 +22,7 @@
     <string name="notification_text">Press play to hear the piece!</string>
     <string name="sample_list_load_error">Error loading one or more samples!</string>
     <string name="sample_not_found_error">404notfound</string>
-    <string name="play">continue to play</string>
-    <string name="pause">pause it?</string>
-    <string name="restart">actually skip to previous</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="restart">Restart</string>
 </resources>
