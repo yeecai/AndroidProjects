@@ -24,21 +24,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Note.CREATE_TABLE);
+       // writeTestCase(db);
         ContentValues values = new ContentValues();
-        values.put(Note.COLUMN_NOTE, "test");
-        long id;
-        id = db.insert(Note.TABLE_NAME, null, values);
-        values.put(Note.COLUMN_NOTE, "test1");
-        id = db.insert(Note.TABLE_NAME, null, values);
+        values.put(Note.COLUMN_NOTE, "hmm");
+
+        db.insert(Note.TABLE_NAME, null, values);
+        values.put(Note.COLUMN_NOTE, "hmm2");
+        db.insert(Note.TABLE_NAME, null, values);
+
     }
 
     /*
      Create a few notes for test purpose
      */
-   /* private Long writeTestCase() {
+   /* private Long writeTestCase(SQLiteDatabase db) {
       //  SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(Note.COLUMN_NOTE, "test");
+        values.put(Note.COLUMN_NOTE, "hmm");
 
         long id = db.insert(Note.TABLE_NAME, null, values);
         db.close();
@@ -79,5 +81,66 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         // return notes list
         return notes;
+    }
+
+    public long insertNote(String note) {
+        // get writable database as we want to write data
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        // `id` and `timestamp` will be inserted automatically.
+        // no need to add them
+        values.put(Note.COLUMN_NOTE, note);
+
+        // insert row
+        long id = db.insert(Note.TABLE_NAME, null, values);
+
+        // close db connection
+        db.close();
+
+        // return newly inserted row id
+        return id;
+    }
+
+    public Note getNote(long id) {
+        // get readable database as we are not inserting anything
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(Note.TABLE_NAME,
+                new String[]{Note.COLUMN_ID, Note.COLUMN_NOTE, Note.COLUMN_TIMESTAMP},
+                Note.COLUMN_ID + "=?",
+                new String[]{String.valueOf(id)}, null, null, null, null);
+
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        // prepare note object
+        Note note = new Note(
+                cursor.getInt(cursor.getColumnIndex(Note.COLUMN_ID)),
+                cursor.getString(cursor.getColumnIndex(Note.COLUMN_NOTE)),
+                cursor.getString(cursor.getColumnIndex(Note.COLUMN_TIMESTAMP)));
+
+        // close the db connection
+        cursor.close();
+
+        return note;
+    }
+
+    public int updateNote(Note note) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(Note.COLUMN_NOTE, note.getNote());
+
+        // updating row
+        return db.update(Note.TABLE_NAME, values, Note.COLUMN_ID + " = ?",
+                new String[]{String.valueOf(note.getId())});
+    }
+
+    public void deleteNote(Note note) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(Note.TABLE_NAME, Note.COLUMN_ID + " = ?",
+                new String[]{String.valueOf(note.getId())});
+        db.close();
     }
 }
