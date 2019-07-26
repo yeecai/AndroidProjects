@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -22,6 +23,7 @@ import android.widget.Toast;
 import com.example.annotepad01.R;
 import com.example.annotepad01.sqlite.database.DatabaseHelper;
 import com.example.annotepad01.sqlite.database.model.Note;
+import com.example.annotepad01.sqlite.utils.RecyclerTouchListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,16 +62,8 @@ public class MainActivity extends AppCompatActivity {
         /* for(Note temp:notesList){ // test notes
             Log.d("note","note: "+temp.getNote());
         }*/
-        
-        mAdapter = new NotesAdapter(this, notesList);
-      //  mLayoutManager = new LinearLayoutManager(getApplicationContext());
-      //  mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
-
-      //  recyclerView.setLayoutManager(mLayoutManager);
-       // Log.d("mAdapter","mAdapter.getItemCount() "+mAdapter.getItemCount());
         recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setAdapter(mAdapter);
 
 
         //CRUD
@@ -81,18 +75,67 @@ public class MainActivity extends AppCompatActivity {
                 showNoteDialog(false, null, -1);
             }
         });
+
+
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.addItemDecoration(new MyDividerItemDecoration(this, LinearLayoutManager.VERTICAL, 16));
+        mAdapter = new NotesAdapter(this, notesList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setAdapter(mAdapter);
+
+
+
+
+
         /*
             Edit & Create same dialog, if edit call update
             if create call create
         */
 
-        /*
-            After long-press, show Edit or Delete
-            If isUpdate true, edit instead of create new.
-         */
+        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
+                recyclerView, new RecyclerTouchListener.ClickListener() {
+            @Override
+            public void onClick(View view, final int position) {
+                Log.d("a","amin"+0);
+            }
 
-
+            @Override
+            public void onLongClick(View view, int position) {
+                Log.d("a","amin"+0);
+                showActionsDialog(position);
+                Toast.makeText(MainActivity.this, "Long press on position :"+position,
+                        Toast.LENGTH_LONG).show();
+            }
+        }));
     }
+
+
+    private void showActionsDialog(final int position) {
+        Log.d("a","amin"+0);
+        CharSequence colors[] = new CharSequence[]{"Edit", "Delete"};
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Choose option");
+        builder.setItems(colors, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (which == 0) {
+                    showNoteDialog(true, notesList.get(position), position);
+                } else {
+                    deleteNote(position);
+                }
+            }
+        });
+        builder.show();
+    }
+
+
+
+    /*
+        After long-press, show Edit or Delete
+        If showUpdate true, edit instead of create new.
+    */
     private void showNoteDialog(final boolean shouldUpdate,final Note note,final int position){
         LayoutInflater layoutInflaterAndroid = LayoutInflater.from(getApplicationContext());
         View view = layoutInflaterAndroid.inflate(R.layout.note_dialog, null);
