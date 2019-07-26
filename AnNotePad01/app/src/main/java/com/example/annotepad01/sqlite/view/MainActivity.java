@@ -97,14 +97,12 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, final int position) {
-                Log.d("a","amin"+0);
             }
 
             @Override
             public void onLongClick(View view, int position) {
-                Log.d("a","amin"+0);
                 showActionsDialog(position);
-                Toast.makeText(MainActivity.this, "Long press on position :"+position,
+                Toast.makeText(MainActivity.this, "Long press on position :, "+position,
                         Toast.LENGTH_LONG).show();
             }
         }));
