@@ -8,13 +8,18 @@ package com.example.annotepad01.sqlite.utils;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
+
+import com.example.annotepad01.sqlite.view.MainActivity;
 
 public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
     private ClickListener clicklistener;
     private GestureDetector gestureDetector;
+    private Object MainActivity;
 
 
     /*
@@ -47,15 +52,16 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
     public boolean onInterceptTouchEvent(@NonNull RecyclerView recyclerView, @NonNull MotionEvent motionEvent) {
 
         View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
-        if (child != null && clicklistener != null && gestureDetector.onTouchEvent(motionEvent)) {
-            clicklistener.onLongClick(child, recyclerView.getChildPosition(child)); // Or onClick()
-        }
-        return false;
+         gestureDetector.onTouchEvent(motionEvent);
+       /* if (child != null && clicklistener != null && gestureDetector.onTouchEvent(motionEvent)) {
+            clicklistener.onClick(child, recyclerView.getChildPosition(child)); // no doing anything here, only longPress work.
+        }*/
+        return false; //If return true onClick() will be called cause onTouchEvent is called
     }
 
     @Override
     public void onTouchEvent(@NonNull RecyclerView recyclerView, @NonNull MotionEvent motionEvent) {
-
+       // Log.d("IF","onIntercepTouchEvent return ture, here will be called"+0);
     }
 
     @Override
