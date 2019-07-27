@@ -13,6 +13,8 @@ import android.view.View;
 
 import com.example.annotepad01.R;
 
+import static android.app.PendingIntent.getActivity;
+
 public class SwipeToDeleteCallback extends ItemTouchHelper.SimpleCallback{
 
     private final Drawable icon;
@@ -41,7 +43,7 @@ public class SwipeToDeleteCallback extends ItemTouchHelper.SimpleCallback{
         int position = viewHolder.getAdapterPosition();
         //How to call the delete method in MA tho...
         //MainActivity.getInstance().deleteNote(position);
-        //((MainActivity)getActivity()).deleteNote(position);
+       MainActivity.deleteNote(position);
         /* mAdapter.deleteItem(position); */
     }
 
@@ -52,8 +54,6 @@ public class SwipeToDeleteCallback extends ItemTouchHelper.SimpleCallback{
                 dY, actionState, isCurrentlyActive);
         View itemView = viewHolder.itemView;
         int backgroundCornerOffset = 20;
-
-
 
         int iconMargin = (itemView.getHeight() - icon.getIntrinsicHeight()) / 2;
         int iconTop = itemView.getTop() + (itemView.getHeight() - icon.getIntrinsicHeight()) / 2;

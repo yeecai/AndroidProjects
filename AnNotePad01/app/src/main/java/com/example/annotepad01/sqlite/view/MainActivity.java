@@ -43,11 +43,14 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static MainActivity instance;
-    private NotesAdapter mAdapter;
-    private DatabaseHelper db;
-    private List<Note> notesList = new ArrayList<>();
+    private static NotesAdapter mAdapter;
+    private static DatabaseHelper db;
+    private static List<Note> notesList = new ArrayList<>();
+    private static Note mostRecentlyDeleteNote;
     private RecyclerView recyclerView;
     private  RecyclerView.LayoutManager mLayoutManager;
+    private static View view;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
 
         recyclerView = findViewById(R.id.recycler_view);
-
+        view = this.findViewById(R.id.coordinator_layout);
 
         //CRUD
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -114,9 +117,9 @@ public class MainActivity extends AppCompatActivity {
         }));
     }
 
-    public static MainActivity getInstance() {
+   /* public static MainActivity getInstance() {
         return instance;
-    }
+    }*/
 
     private void showActionsDialog(final int position) {
         Log.d("a","amin"+0);
@@ -201,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
     /*
     *  CUD
     * */
-    private void createNote(String note) {
+    private static void createNote(String note) {
         // inserting note in db and getting
         // newly inserted note id
         long id = db.insertNote(note);
@@ -241,17 +244,34 @@ public class MainActivity extends AppCompatActivity {
      * Deleting note from SQLite and removing the
      * item from the list by its position
      */
-    public void deleteNote(int position) {
+    public static void deleteNote(int position) {
         // deleting the note from db
+
+        mostRecentlyDeleteNote = notesList.get(position);
+
         db.deleteNote(notesList.get(position));
 
+      //   =
         // removing the note from the list
         notesList.remove(position);
         mAdapter.notifyItemRemoved(position);
 
+        showUndoSnackBar();
     }
 
-
+    private static void showUndoSnackBar() {
+       // Can really do this in a statci method, should try pass view as parameter.
+        Snackbar snackbar = Snackbar.make(view, R.string.snack_bar_text,
+                Snackbar.LENGTH_LONG);
+        snackbar.setAction(R.string.snack_bar_undo, v -> undoDelete());
+        snackbar.show();
+    }
+    /*
+    * Undo actually is insert the most recent deleted item again...for now!
+    * */
+    private static void undoDelete() {
+        createNote(mostRecentlyDeleteNote.getNote());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
