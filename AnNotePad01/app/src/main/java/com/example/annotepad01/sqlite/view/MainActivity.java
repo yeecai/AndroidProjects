@@ -36,7 +36,10 @@ import java.util.List;
 *  SQLite part
 *  MVP
 *  Materiel Design CardViews
-*
+*  TODO: refactor undo, and learn about MVP
+*  make this into a to-do list instead
+*  And an cardView and edit fagment or activity
+*  So much to do!
 * */
 
 
