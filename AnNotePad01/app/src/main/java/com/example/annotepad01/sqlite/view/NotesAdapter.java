@@ -1,6 +1,7 @@
 package com.example.annotepad01.sqlite.view;
 
 import android.content.Context;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.example.annotepad01.R;
 import com.example.annotepad01.sqlite.database.model.Note;
 
+import java.nio.FloatBuffer;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -20,11 +22,20 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
 
     private final Context context;
     private final List<Note> notesList;
+    private FloatBuffer mListItems;
+    private int mRecentlyDeletedItemPosition;
+    private float mRecentlyDeletedItem;
+    private View mActivity;
 
     public NotesAdapter(Context context, List<Note> notesList) {
         this.context = context;
         this.notesList = notesList;
     }
+
+    public Context getContext() {
+        return context;
+    }
+
 
 
     public class MyViewHolder extends RecyclerView.ViewHolder { //why not private
@@ -76,4 +87,30 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.MyViewHolder
 
         return "";
     }
+/*
+*   For SwipeToDeleteCallback
+*   But not sure it should be in NotesAdapter
+* */
+   /* public void deleteItem(int position) {
+        mRecentlyDeletedItem = mListItems.get(position);
+        mRecentlyDeletedItemPosition = position;
+        mListItems.remove(position);
+        notifyItemRemoved(position);
+        showUndoSnackbar();
+    }*/
+/*
+    private void showUndoSnackbar() {
+        View view = mActivity.findViewById(R.id.coordinator_layout);
+        Snackbar snackbar = Snackbar.make(view, R.string.snack_bar_text,
+                Snackbar.LENGTH_LONG);
+        snackbar.setAction(R.string.snack_bar_undo, v -> undoDelete())
+        snackbar.show();
+    }
+    private void undoDelete() {
+        mListItems.add(mRecentlyDeletedItemPosition,
+                mRecentlyDeletedItem);
+        notifyItemInserted(mRecentlyDeletedItemPosition);
+    }
+*/
+
 }

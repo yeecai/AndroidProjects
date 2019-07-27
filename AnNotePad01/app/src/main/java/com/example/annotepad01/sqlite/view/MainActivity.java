@@ -10,6 +10,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -41,6 +42,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static MainActivity instance;
     private NotesAdapter mAdapter;
     private DatabaseHelper db;
     private List<Note> notesList = new ArrayList<>();
@@ -84,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(mAdapter);
 
+        ItemTouchHelper itemTouchHelper = new
+                ItemTouchHelper(new SwipeToDeleteCallback(mAdapter));
+        itemTouchHelper.attachToRecyclerView(recyclerView);
+
 
 
 
@@ -108,6 +114,9 @@ public class MainActivity extends AppCompatActivity {
         }));
     }
 
+    public static MainActivity getInstance() {
+        return instance;
+    }
 
     private void showActionsDialog(final int position) {
         Log.d("a","amin"+0);
@@ -232,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
      * Deleting note from SQLite and removing the
      * item from the list by its position
      */
-    private void deleteNote(int position) {
+    public void deleteNote(int position) {
         // deleting the note from db
         db.deleteNote(notesList.get(position));
 
