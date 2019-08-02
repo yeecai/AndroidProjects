@@ -1,17 +1,20 @@
 package com.example.uipractices;
 
-import android.support.v4.app.Fragment;
+import android.content.Context;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.uipractices.MyRecyclerView.MyRecyclerViewFragment;
-import com.example.uipractices.MyRecyclerView.MyAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
         //initData();
         // Buttons jump to different UI
+
+        //setListView();
+
+        //  setGridView();
+
+
         // RV!
         rvButton = findViewById(R.id.recyclerview_fragment_button);
         rvButton.setOnClickListener(new View.OnClickListener() {
@@ -57,9 +66,7 @@ public class MainActivity extends AppCompatActivity {
         //
 
 
-      // setListView();
 
-      //  setGridView();
         //all the code from https://developer.android.com/guide/topics/ui/layout/recyclerview
 
         // CV
@@ -75,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void openRecyclerViewFragment() {
        // Log.d(TAG, "hmm");
-        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(2); // Do we have to new an instance each single time?
+        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(1); // Do we have to new an instance each single time?
 
         //Get the FragmentManager and start a transaction
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -102,16 +109,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    /*public void setListView() {
+   public void setListView() {
 
-        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+      //  recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+       recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL));//it works here!!!
 
         mAdapter = new MyAdapter(myDataset);
         recyclerView.setAdapter(mAdapter);
 
     }
+/*
     public void setGridView() {
 
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -124,4 +132,63 @@ public class MainActivity extends AppCompatActivity {
 
     }*/
 
+    public static class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+        private Context mContext;
+        private List<String> mDataset;
+       // private String[] mDataset;
+        // Provide a reference to the views for each data item
+        // Complex data items may need more than one view per item, and
+        // you provide access to all the views for a data item in a view holder
+
+
+        // Provide a suitable constructor (depends on the kind of dataset)
+        public MyAdapter(List<String> myDataset) {
+          //  this.mContext = mContext;
+            this.mDataset = myDataset;
+        }
+
+        // Create new views (invoked by the layout manager)
+        @Override
+        public MyViewHolder onCreateViewHolder(ViewGroup parent,
+                                               int viewType) {
+            // create a new view
+            View v = (View) LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.my_text_view, parent, false);
+
+            MyViewHolder vh = new MyViewHolder(v);
+            return vh;
+        }
+
+
+        // Replace the contents of a view (invoked by the layout manager)
+        @Override
+        public void onBindViewHolder(MyViewHolder holder, int position) {
+            // - get element from your dataset at this position
+            // - replace the contents of the view with that element
+          //  holder.itemView.setTag(position);
+            holder.textView.setText(mDataset.get(position));
+
+        }
+
+
+
+        // Return the size of your dataset (invoked by the layout manager)
+        @Override
+        public int getItemCount() {
+          //  return mDataset.length;
+            return mDataset.size();
+        }
+     // now need to extends ViewHolder anymore????
+
+        public class MyViewHolder extends RecyclerView.ViewHolder {
+            // each data item is just a string in this case
+            public TextView textView;
+
+            public MyViewHolder(View v) {
+                super(v);
+                textView = (TextView) v.findViewById(R.id.textView);
+            }
+        }
+
+    }
 }
