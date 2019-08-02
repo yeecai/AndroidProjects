@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +10,8 @@
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
+
+
 
 
     <Button
@@ -23,6 +25,7 @@
         android:id="@+id/cardview_fragment_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/recyclerview_fragment_button"
         android:layout_weight="1"
         android:text="Button" />
 
@@ -30,17 +33,20 @@
         android:id="@+id/notification_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/cardview_fragment_button"
         android:layout_weight="1"
         android:text="Button" />
+
+
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:name="com.example.android.fragmentcommunicate.SimpleFragment"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notification_button1"
         tools:layout="@layout/fragment_recyclerview"
         />
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

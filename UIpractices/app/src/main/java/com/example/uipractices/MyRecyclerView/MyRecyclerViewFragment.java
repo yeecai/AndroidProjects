@@ -73,11 +73,14 @@ public class MyRecyclerViewFragment extends Fragment {
 
             if (mColumnCount <= 1) {
                 mLayoutManager = new LinearLayoutManager(context);
-                recyclerView.setLayoutManager(mLayoutManager);
                 recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL));
             } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+                mLayoutManager = new GridLayoutManager(context, mColumnCount);
+              //  recyclerView.addItemDecoration(new DefaultItemAnimator());
             }
+            recyclerView.setLayoutManager(mLayoutManager);
+
+
             recyclerView.setAdapter(new MyItemRecyclerViewAdapter(DummyContent.ITEMS, mListener));
         }
         return view;

@@ -10,6 +10,7 @@ import com.example.uipractices.MyRecyclerView.MyRecyclerViewFragment.OnListFragm
 import com.example.uipractices.MyRecyclerView.dummy.DummyContent.DummyItem;
 import com.example.uipractices.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,9 +23,24 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
     private final List<DummyItem> mValues;
     private final OnListFragmentInteractionListener mListener;
 
+    private LayoutInflater mInflater;
+
+
+
     public MyItemRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
+       // mInflater = LayoutInflater.from(context);
+
         mValues = items;
         mListener = listener;
+     /*
+
+       private List<Integer> mHeights;
+      mHeights = new ArrayList<Integer>();
+        for (int i = 0; i < mValues.size(); i++)
+        {
+            mHeights.add( (int) (100 + Math.random() * 300));
+        }*/
+
     }
 
     @Override
@@ -34,11 +50,20 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         return new ViewHolder(view);
     }
 
+
+
+
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
+
         holder.mContentView.setText(mValues.get(position).content);
+
+//        ViewGroup.LayoutParams lp = holder.mView.getLayoutParams();
+//        lp.height = mHeights.get(position);
+//          figure out how to set heights as effect of waterfall later
+//        holder.mView.setLayoutParams(lp);
+        holder.mIdView.setText(mValues.get(position).id);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +71,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
                 if (null != mListener) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
+
                     mListener.onListFragmentInteraction(holder.mItem);
                 }
             }

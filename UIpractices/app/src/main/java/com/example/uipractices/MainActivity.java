@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // RV!
+/*
         rvButton = findViewById(R.id.recyclerview_fragment_button);
         rvButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,15 +60,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+*/
+        openRecyclerViewFragment();
 
 
 
 
-        //
-
-
-
-        //all the code from https://developer.android.com/guide/topics/ui/layout/recyclerview
 
         // CV
 
@@ -77,15 +75,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void closeRecyclerViewFFragment() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        MyRecyclerViewFragment mFragment = (MyRecyclerViewFragment) fragmentManager.findFragmentById(R.id.fragment_container);
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.remove(mFragment).commit();
         isFragmentDisplayed = false;
     }
 
     private void openRecyclerViewFragment() {
-       // Log.d(TAG, "hmm");
-        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(1); // Do we have to new an instance each single time?
+
+        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(4); // Do we have to new an instance each single time?
 
         //Get the FragmentManager and start a transaction
         FragmentManager fragmentManager = getSupportFragmentManager();
+
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         fragmentTransaction.add(R.id.fragment_container,
@@ -106,31 +111,22 @@ public class MainActivity extends AppCompatActivity {
         for (int i=1; i<20;i++) myDataset.add(i+"");
     }
 
-
-
-
    public void setListView() {
-
       //  recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL));//it works here!!!
 
         mAdapter = new MyAdapter(myDataset);
         recyclerView.setAdapter(mAdapter);
-
     }
-/*
+
     public void setGridView() {
 
-        recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL));
-
-
-
+       // recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        //recyclerView.setLayoutManager(new StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL));
         mAdapter = new MyAdapter(myDataset);
         recyclerView.setAdapter(mAdapter);
-
-    }*/
+    }
 
     public static class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         private Context mContext;

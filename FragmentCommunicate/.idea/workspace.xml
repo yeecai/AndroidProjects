@@ -23,9 +23,11 @@
     <list default="true" id="9bcc84b2-bba2-4264-8473-1937118a57fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyItemRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyItemRecyclerViewAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyRecyclerViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyRecyclerViewFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/fragment_recyclerview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/fragment_recyclerview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/my_text_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/my_text_view.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my2048" beforeDir="false" afterPath="$PROJECT_DIR$/../my2048" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/fragmentcommunicate/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="441">
+              <caret line="97" column="116" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="116" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -379,6 +381,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-2" width="1280" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50289017" side_tool="true" weight="0.21136364" />
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49710983" visible="true" weight="0.22609401" />
@@ -526,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/fragmentcommunicate/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="441">
+          <caret line="97" column="116" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
