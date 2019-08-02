@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Wed Jul 10 11:54:12 CEST 2019
+#Fri Aug 02 04:11:30 CEST 2019
 0.baseType=DIRECTORY
-0.base=/home/lilian/AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.base=/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/dex/debug/mergeDexDebug/out
 0.path=classes.dex
 0.set=DEX
 count=1

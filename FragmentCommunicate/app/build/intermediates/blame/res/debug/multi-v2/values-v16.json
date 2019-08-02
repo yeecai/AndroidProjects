@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lilian/AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/res/values-v16/values-v16.xml",
+                    "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

@@ -1,143 +1,143 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/0beb0a9746628fe49f83ac4493bf18cc/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:17:1-31:12
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/bcf5a276cc0d64239c0a6363a281d30b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:3:5-54
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:3:5-54
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:1-22:12
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:5:5-20:19
-MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/0beb0a9746628fe49f83ac4493bf18cc/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/0beb0a9746628fe49f83ac4493bf18cc/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:25:5-29:19
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/bcf5a276cc0d64239c0a6363a281d30b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/bcf5a276cc0d64239c0a6363a281d30b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.android.fragmentcommunicate.SecondActivity
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:12:9-61
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:12:9-61
 	android:name
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:12:19-49
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:12:19-49
 activity#com.example.android.fragmentcommunicate.MainActivity
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:13:9-19:20
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:13:19-47
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:14:13-18:29
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml:17:27-74
 uses-sdk
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/0beb0a9746628fe49f83ac4493bf18cc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/0beb0a9746628fe49f83ac4493bf18cc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:21:5-23:58
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/bcf5a276cc0d64239c0a6363a281d30b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/lilian/.gradle/caches/transforms-2/files-2.1/bcf5a276cc0d64239c0a6363a281d30b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		ADDED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
-		INJECTED from /home/lilian/AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		ADDED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
+		INJECTED from /home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3add13061a90e966d757a65ac6ee3324/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/553698d98fef7309657111f07d648622/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9eaa080cadf8bfa0fddfbcbfb6abc335/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/7aa420ae75d69eea9ad5eef4ab91787d/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/55b09187b0b6c68b4b01b1b94e05e88f/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/b9df06953c822243956ce8354a444bdc/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/2bcfb7ebc4a513ba6bcdfc05e5f64a9f/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/8939943b98e27c62ff10449f6e6623db/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/db22380d486f7c319430b673e3048a4d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/a14e4a4b9af698c977b5824a1053a057/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/32f2b8015749f40a2212cbf402c12656/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e34051dc23f7be0dfb30836b4010ab1e/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9e91ad1426d9c2bfc93f44142cfc2a71/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/e3244ffe490aeee5d998bfd2596f5ca3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/30a78f4c289c88c3de2c65af6f126ff8/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:appcompat-v7:26.0.1] /home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/AndroidManifest.xml:27:13-51

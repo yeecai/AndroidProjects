@@ -1,32 +1,33 @@
 package com.example.uipractices;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.GridLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
-import com.example.uipractices.MyAdapter;
-import com.example.uipractices.R;
+import com.example.uipractices.MyRecyclerView.MyRecyclerViewFragment;
+import com.example.uipractices.MyRecyclerView.MyAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-   // private String[] myDataset;
+    private static final String TAG = "hmm";
+    // private String[] myDataset;
     private List<String> myDataset;
 
     private RecyclerView recyclerView;
     // private LinearLayoutManager layoutManager;
     private MyAdapter mAdapter;
+    private Button rvButton;
 
+    private boolean isFragmentDisplayed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +35,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initData();
+        //initData();
         // Buttons jump to different UI
         // RV!
+        rvButton = findViewById(R.id.recyclerview_fragment_button);
+        rvButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!isFragmentDisplayed) {
+                   // Log.d(TAG, "hmm");
+                    openRecyclerViewFragment();
+                }else {
+                    closeRecyclerViewFFragment();
+                }
+            }
+        });
 
-       //
+
+
+
+        //
 
 
       // setListView();
 
-        setGridView();
+      //  setGridView();
         //all the code from https://developer.android.com/guide/topics/ui/layout/recyclerview
 
         // CV
@@ -51,6 +67,24 @@ public class MainActivity extends AppCompatActivity {
         // Notifactions
 
         //TookBar&Palette
+    }
+
+    private void closeRecyclerViewFFragment() {
+        isFragmentDisplayed = false;
+    }
+
+    private void openRecyclerViewFragment() {
+       // Log.d(TAG, "hmm");
+        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(2); // Do we have to new an instance each single time?
+
+        //Get the FragmentManager and start a transaction
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.add(R.id.fragment_container,
+                mFragment).addToBackStack(null).commit();
+
+        isFragmentDisplayed = true;
     }
 
 
@@ -65,7 +99,10 @@ public class MainActivity extends AppCompatActivity {
         for (int i=1; i<20;i++) myDataset.add(i+"");
     }
 
-    public void setListView() {
+
+
+
+    /*public void setListView() {
 
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -85,6 +122,6 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new MyAdapter(myDataset);
         recyclerView.setAdapter(mAdapter);
 
-    }
+    }*/
 
 }

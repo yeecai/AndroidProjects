@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/lilian/AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/56e7167b5f892550a3f0ebd785880312/res/values-v26/values-v26.xml",
+                    "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
