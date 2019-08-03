@@ -75,14 +75,13 @@
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:name="com.example.android.fragmentcommunicate.SimpleFragment"
+        android:name="com.example.android.fragmentexample.SimpleFragment"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_simple"
-        />
+        tools:layout="@layout/fragment_simple" />
 
     <Button
         android:id="@+id/open_button"

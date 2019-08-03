@@ -28,13 +28,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
     implements SimpleFragment.OnFragmentInterationListener{
-    private Button mButton;
+    private static Button mButton;
     private Button nButton;
 
-    private boolean isFragmentDisplayed = false;
+    private static boolean isFragmentDisplayed = false;
 
     static final String STATE_FRAGMWNT = "state_of_fragment";
-    private int mRadioButtonChoice = 2;
+    private static int mRadioButtonChoice = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity
     public void displayFragment() {
         SimpleFragment simpleFragment = SimpleFragment.newInstance(mRadioButtonChoice); // Do we have to new an instance each single time?
         //Get the FragmentManager and start a transaction
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentManager fragmentManager = (FragmentManager) getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         //TODO: Add the SimpleFragment.
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity
 
     public void closeFragment() {
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentManager fragmentManager = (FragmentManager) getSupportFragmentManager();
         SimpleFragment simpleFragment =  (SimpleFragment) fragmentManager.findFragmentById(R.id.fragment_container);
         // TODO: if the simplefragment exists, need to remove the callback. which means the displayFragment() called
         if( simpleFragment != null) {

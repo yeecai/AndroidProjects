@@ -8,16 +8,16 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/res/layout/notification_template_media_custom.xml"
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_text_material.xml.flat",
@@ -40,12 +40,12 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable/abc_textfield_search_material.xml"
-    },
-    {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable/abc_textfield_search_material.xml"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -60,12 +60,12 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -156,12 +156,12 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
@@ -356,12 +356,12 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -464,12 +464,12 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/res/layout/notification_template_big_media_narrow_custom.xml"
-    },
-    {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -556,12 +556,12 @@
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/9d669d18765ce07b187edd97c1c28d50/res/layout/notification_media_cancel_action.xml"
     },
     {
-        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "/home/lilian/.gradle/caches/transforms-2/files-2.1/3a441e60e0482c893b0bab7f43dad7c4/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/lilian/1AndroidStudioProjects/FragmentCommunicate/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat",
