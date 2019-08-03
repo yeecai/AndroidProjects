@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void openRecyclerViewFragment() {
 
-        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(4); // Do we have to new an instance each single time?
+        MyRecyclerViewFragment mFragment = MyRecyclerViewFragment.newInstance(2); // Do we have to new an instance each single time?
 
         //Get the FragmentManager and start a transaction
         FragmentManager fragmentManager = getSupportFragmentManager();

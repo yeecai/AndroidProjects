@@ -21,13 +21,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bcc84b2-bba2-4264-8473-1937118a57fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AnNotePad01/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../AnNotePad01/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AnNotePad01/app/src/main/java/com/example/annotepad01/sqlite/view/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AnNotePad01/app/src/main/java/com/example/annotepad01/sqlite/view/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AnNotePad01/app/src/main/res/layout/note_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnNotePad01/app/src/main/res/layout/note_list_row.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UIpractices/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UIpractices/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyItemRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyItemRecyclerViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyRecyclerViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/java/com/example/uipractices/MyRecyclerView/MyRecyclerViewFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/fragment_recyclerview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/fragment_recyclerview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/my_text_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UIpractices/app/src/main/res/layout/my_text_view.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my2048" beforeDir="false" afterPath="$PROJECT_DIR$/../my2048" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +55,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_simple.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
@@ -94,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/fragmentcommunicate/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="859">
               <caret line="97" column="116" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="116" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1366" />
     <option name="y" value="-2" />
     <option name="width" value="1280" />
@@ -380,8 +382,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="-2" width="1280" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="1366" y="-2" width="1280" height="1026" extended-state="7" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50289017" side_tool="true" weight="0.21136364" />
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49710983" visible="true" weight="0.22609401" />
@@ -505,14 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_simple.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -529,11 +522,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/fragmentcommunicate/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="859">
           <caret line="97" column="116" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_simple.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
