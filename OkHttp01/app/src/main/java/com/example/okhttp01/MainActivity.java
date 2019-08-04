@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         OkHttpClient client = new OkHttpClient();
 
-        String url = "https://reqres.in/api/users?page=2";
+        String url = "http://120.78.214.127/";
 
         Request request = new Request.Builder()
                 .url(url)
