@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = (FragmentManager) getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        //TODO: Add the SimpleFragment.
+        // Add the SimpleFragment.
         fragmentTransaction.add(R.id.fragment_container,
                 simpleFragment).addToBackStack(null).commit();
         mButton.setText(R.string.close);
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity
 
         FragmentManager fragmentManager = (FragmentManager) getSupportFragmentManager();
         SimpleFragment simpleFragment =  (SimpleFragment) fragmentManager.findFragmentById(R.id.fragment_container);
-        // TODO: if the simplefragment exists, need to remove the callback. which means the displayFragment() called
+        //  if the simplefragment exists, need to remove the callback. which means the displayFragment() called
         if( simpleFragment != null) {
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.remove(simpleFragment).commit();

@@ -56,6 +56,9 @@ public class SimpleFragment extends Fragment {
         final View rootView =
                 inflater.inflate(R.layout.fragment_simple, container, false);
 
+      //  View staticFragment = inflater.inflate(R.layout.fragment_static, container, false);
+
+
         final RadioGroup radioGroup = rootView.findViewById(R.id.radio_group);
 
         if(getArguments().containsKey(CHOICE)) {
