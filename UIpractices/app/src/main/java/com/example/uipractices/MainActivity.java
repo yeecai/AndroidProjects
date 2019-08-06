@@ -1,9 +1,19 @@
 package com.example.uipractices;
 
+import android.annotation.TargetApi;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
@@ -24,7 +34,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "hmm";
-    // private String[] myDataset;
+    public static final int NOTIFICATION_ID = 1;    // private String[] myDataset;
     private List<String> myDataset;
 
     private RecyclerView recyclerView;
@@ -34,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean isFragmentDisplayed = false;
     private MyBlock mBlock;
+    private NotificationManager notificationManager;
+    private View ntButton;
+    private int notificationId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,15 +88,49 @@ public class MainActivity extends AppCompatActivity {
         // CV
 
         // Notifactions
-     /*   NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.notification_icon)
-                .setContentTitle(textTitle)
-                .setContentText(textContent)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);*/
+        ntButton = findViewById(R.id.notification_button1);
+
+
+        ntButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                notifyNotifcations();
+            }
+        });
 
         //TookBar&Palette
     }
 
+    private void notifyNotifcations() {
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+        builder.setSmallIcon(R.drawable.ic_android_black_24dp);
+        builder.setContentTitle("BasicNotifications Sample");
+        builder.setContentText("Time to learn about notifications!");
+        builder.setAutoCancel(true);
+
+        Intent mIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.baidu.com"));
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, mIntent, 0);
+        NotificationManager notificationManager = (NotificationManager) getSystemService(
+                NOTIFICATION_SERVICE);
+        notificationManager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+   /* private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel_name);
+            String description = getString(R.string.channel_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }*/
     private void closeRecyclerViewFFragment() {
         FragmentManager fragmentManager = getSupportFragmentManager();
 
