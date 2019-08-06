@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.uipractices.MyRecyclerView.MyRecyclerViewFragment;
+import com.example.uipractices.View.MyBlock;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,12 +33,16 @@ public class MainActivity extends AppCompatActivity {
     private Button rvButton;
 
     private boolean isFragmentDisplayed = false;
+    private MyBlock mBlock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //A custom view for action practice
+        mBlock = (MyBlock) this.findViewById(R.id.my_block);
 
         //initData();
         // Buttons jump to different UI
@@ -48,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // RV!
-/*
+
         rvButton = findViewById(R.id.recyclerview_fragment_button);
         rvButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-*/
-        openRecyclerViewFragment();
+     //   openRecyclerViewFragment();
 
 
 
@@ -71,11 +75,11 @@ public class MainActivity extends AppCompatActivity {
         // CV
 
         // Notifactions
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+     /*   NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle(textTitle)
                 .setContentText(textContent)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);*/
 
         //TookBar&Palette
     }
