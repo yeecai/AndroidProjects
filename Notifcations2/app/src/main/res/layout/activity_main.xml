@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Let's figure out how to notify!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -19,24 +21,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Basic!"
-        android:id="@+id/button"
+        android:id="@+id/button_basic"
         android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:onClick="sendNotificationBasic"/>
 
- <!--   <Button
+  <!--  <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fodlable!"
-        android:id="@+id/button"
+        android:text="Reply!"
+        app:layout_constraintLeft_toRightOf="@+id/button_basic"
+        android:id="@+id/button_message_reply"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_gravity="center"
-        android:onClick="sendNotificationBasic"/>
+        />-->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Basic!"
+        android:text="Expand!"
         android:id="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button_basic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_gravity="center"
-        android:onClick="sendNotificationBasic"/>-->
+        android:onClick="sendNotificationExpandable"/>
 
 </android.support.constraint.ConstraintLayout>
