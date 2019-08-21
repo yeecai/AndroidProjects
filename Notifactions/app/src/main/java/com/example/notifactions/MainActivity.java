@@ -9,9 +9,10 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.core.app.NotificationCompat;
 
 /**
  * The entry point to the BasicNotification sample.

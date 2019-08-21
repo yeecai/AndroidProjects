@@ -7,15 +7,17 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.RemoteInput;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+
+import static android.content.Context.NOTIFICATION_SERVICE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -127,4 +129,6 @@ public class MainActivity extends AppCompatActivity {
         notificationManager.notify(notificationId, mBuilder.build());
 
     }
+
+
 }
