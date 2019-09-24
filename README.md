@@ -1,7 +1,6 @@
-# AndroidProjects
-My practices of Android development
+# Android-demos
+I only found out that the big project often too intemated to finish, so when I'm free from work, I turn to gather demos, hope they can become a part of my big project one day. So here are all my collections, I'll try my best to keep it tidy, although it's very hardXD, feel free to share and give me adivse to yushunchn@gmail.com!
 
-Collection of any study material related to AD
 
 1.
 
