@@ -1,6 +1,7 @@
 package com.exampe.nerdlauncher;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
@@ -67,7 +68,7 @@ public class NerdLaucherFragment extends Fragment {
         Log.i(TAG, "Found " + activities.size() + "activties.");
         mRecyclerView.setAdapter(new ActivtiyAdapter(activities));
     }
-    private class ActivityHolder extends RecyclerView.ViewHolder {
+    private class ActivityHolder extends RecyclerView.ViewHolder implements  View.OnClickListener{
 
         private ResolveInfo mResolveInfo;
         private TextView mNameTextView;
@@ -75,6 +76,7 @@ public class NerdLaucherFragment extends Fragment {
         public ActivityHolder(@NonNull View itemView) {
             super(itemView);
             mNameTextView = (TextView) itemView;
+            mNameTextView.setOnClickListener(this);
         }
 
         public void bindActivity(ResolveInfo resolveInfo) {
@@ -85,7 +87,17 @@ public class NerdLaucherFragment extends Fragment {
         }
 
 
+        @Override
+        public void onClick(View view) {
+            ActivityInfo activityInfo = mResolveInfo.activityInfo;
 
+            Intent i = new Intent(Intent.ACTION_MAIN)
+                    .setClassName(activityInfo.applicationInfo.packageName, activityInfo.name)
+                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            startActivity(i);
+
+        }
     }
 
     private class ActivtiyAdapter extends RecyclerView.Adapter<ActivityHolder> {
